@@ -36,4 +36,5 @@ Link al repositorio de github: [repo](https://github.com/atralice/Curso.Prep.Hen
 
 > Gracias [Nico Constantin (FT#12)](https://github.com/NicoConstantin) por el video y la explicación!
 
-> Thank to you all, Henry Team!
+> Greetings Henry Team!
+> Thank youu very much to all!
