@@ -337,3 +337,7 @@ _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para 
 * [Codecademy: Learn Javascript](https://www.codecademy.com/learn/learn-javascript)
 * [Udacity: Intro to Javascript](https://www.udacity.com/course/intro-to-javascript--ud803)
 * [MDN: Official Javascript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+
+> Greetings Henry Team!
+> Thank you very much to all!
