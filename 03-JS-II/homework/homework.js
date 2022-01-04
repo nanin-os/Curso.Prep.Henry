@@ -9,7 +9,7 @@ function obtenerMayor( x, y ) {
   // the code :
   //
 
-  
+
 }
 
 function mayoriaDeEdad( edad ) {
