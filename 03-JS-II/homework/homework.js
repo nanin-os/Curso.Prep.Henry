@@ -9,13 +9,31 @@ function obtenerMayor( x, y ) {
   // the code :
   //
 
+  var newIntNumber_1 = x;
+  var newIntNumber_2 = y;
+  var newIntMaxVal = 0;
 
+  newIntMaxVal = Math.max( newIntNumber_1, newIntNumber_2 );
+
+  return newIntMaxVal;
 }
 
 function mayoriaDeEdad( edad ) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  
+  //
+  // the code :
+  //
+
+  var newRealEdad = edad;
+  var newRealReturn = 'Not Allowed';
+  
+  if ( newRealEdad >= 18 ) { newRealReturn = 'Allowed'; }
+  if ( newRealEdad < 18 ) { newRealReturn = 'Not allowed'; }
+
+  return newRealReturn;
 }
   
 function conection( status ) {
@@ -24,11 +42,18 @@ function conection( status ) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-
   
   //
   // the code :
   //
+
+  var newStringStatusValue = status;
+  var newStringStatusReturn = 'Offline';
+
+  if ( newStringStatusValue == 1 ) { newStringStatusReturn = 'Online'; }
+  if ( newStringStatusValue == 2 ) { newStringStatusReturn = 'Away'; }
+
+  return newStringStatusReturn;
 }
 
 function saludo( idioma ) {
@@ -38,10 +63,18 @@ function saludo( idioma ) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
 
-  
   //
   // the code :
   //
+
+  var newStringLang = idioma;
+  var newStringLangReturn = 'Hola!';
+
+  if( newStringLang == 'aleman' ) { newStringLangReturn = 'Guten Tag!'; }
+  if( newStringLang == 'mandarin' ) { newStringLangReturn = 'Ni Hao!'; }
+  if( newStringLang == 'ingles') { newStringLangReturn = 'Hello!'; }
+  
+  return newStringLangReturn;
   }
 
 function colors( color ) {
@@ -57,17 +90,36 @@ function colors( color ) {
   // the code :
   //
 
+  var newStringColor = color;
+
+  switch( newStringColor ){
+    case 'blue':
+      return 'This is blue';
+    case 'red':
+      return 'This is red';
+    case 'green':
+      return 'This is green';
+    case 'orange':
+      return 'This is orange';
+    default:
+      return 'Color not found';
+  }
 }
 
 function esDiezOCinco( numero ) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
 
-  
   //
   // the code :
   //
 
+  var newRealNumber = numero;
+  var newBooleanReturn = false;
+
+  if ( ( newRealNumber == 10 ) || ( newRealNumber == 5 ) ) { newBooleanReturn = true; }
+  
+  return newBooleanReturn;
 }
 
 function estaEnRango( numero ) {
@@ -78,6 +130,12 @@ function estaEnRango( numero ) {
   // the code :
   //
 
+  var newRealNumber = numero;
+  var newBooleanReturn = false;
+
+  if ( ( newRealNumber < 50 ) && ( newRealNumber > 20 ) ) { newBooleanReturn = true; }
+  
+  return newBooleanReturn;
 }
 
 function esEntero( numero ) {
@@ -92,6 +150,13 @@ function esEntero( numero ) {
   // the code :
   //
 
+  var newRealNumber = numero;
+  var newBooleanReturn = false;
+
+  if ( ( newRealNumber - Math.floor( newRealNumber ) ) == 0 ) { newBooleanReturn = true; }
+    
+  return newBooleanReturn;
+
 }
 
 function fizzBuzz( numero ) {
@@ -104,6 +169,14 @@ function fizzBuzz( numero ) {
   // the code :
   //
 
+  var newRealNumber = numero;
+  var newStringReturn = numero;
+
+  if ( newRealNumber % 3 == 0 ) { newStringReturn = 'fizz'; }
+  if ( newRealNumber % 5 == 0 ) { newStringReturn = 'buzz'; }
+  if ( ( newRealNumber % 3 == 0 ) && ( newRealNumber % 5 == 0 ) ) { newStringReturn = 'fizzbuzz'; }
+
+  return newStringReturn;
 }
 
 function operadoresLogicos( num1, num2, num3 ) {
@@ -116,7 +189,31 @@ function operadoresLogicos( num1, num2, num3 ) {
 
   //
   // the code :
-  //
+  // 
+  
+  var newRealNumber_1 = num1;
+  var newRealNumber_2 = num2;
+  var newRealNumber_3 = num3;
+
+  var newStringReturn = false;
+
+  if ( ( newRealNumber_1 > newRealNumber_2 ) && ( newRealNumber_1 > newRealNumber_3 ) && ( newRealNumber_1 > 0 ) ) {
+    newStringReturn = 'Número 1 es mayor y positivo';
+  }
+
+  if ( ( newRealNumber_1 < 0 ) || ( newRealNumber_2 < 0 ) || ( newRealNumber_3 < 0 ) ) {
+    newStringReturn = 'Hay negativos';
+  }
+
+  if ( ( newRealNumber_3 > newRealNumber_1 ) && ( newRealNumber_3 > newRealNumber_2 ) ) {
+    newStringReturn = newRealNumber_3 + 1;
+  }
+
+  if ( ( newRealNumber_1 == 0 ) || ( newRealNumber_2 == 0 ) || ( newRealNumber_3 == 0 ) ) {
+    newStringReturn = 'Error';
+  }
+
+return newStringReturn;
 }
 
 function esPrimo( numero ) {
@@ -130,6 +227,25 @@ function esPrimo( numero ) {
   // the code :
   //
 
+    var newRealNumber = numero;
+    var newBooleanReturn = true;
+
+    if ( newRealNumber <= 1) {
+
+      newBooleanReturn = false;
+      return newBooleanReturn;
+
+    } else {
+
+      for ( let i = 2; i < newRealNumber; i++ ) {
+
+        if ( newRealNumber % i == 0 ) {
+          newBooleanReturn = false;
+          return newBooleanReturn;
+        }
+      }
+    }
+    return newBooleanReturn;
 }
 
 function esVerdadero( valor ){
@@ -140,6 +256,13 @@ function esVerdadero( valor ){
   //
   // the code :
   //
+
+  var newBooleanValue = valor;
+  var newStringReturn = 'Soy falso';
+
+  if ( newBooleanValue ) { newStringReturn = 'Soy verdadero'; }
+
+  return newStringReturn;
 }
 
 function tablaDelSeis( ){
@@ -151,7 +274,14 @@ function tablaDelSeis( ){
   // the code :
   //
   
-}
+  var newIntegerNumber = 6;
+  let newTableArray = []
+  
+  for (let i = 0; i <= 10; i++ ){
+    newTableArray[ i ] = newIntegerNumber * i;
+    }
+  return newTableArray;  
+  }
 
 function tieneTresDigitos( numero ){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
@@ -160,7 +290,12 @@ function tieneTresDigitos( numero ){
   //
   // the code :
   //
+  var newRealNumber = numero;
+  var newBooleanReturn = false;
 
+  if ( newRealNumber.toString().length == 3 ){ newBooleanReturn = true; }
+
+  return newBooleanReturn;
 }
 
 function doWhile( numero ) {
@@ -168,11 +303,22 @@ function doWhile( numero ) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
 
-
   //
   // the code :
   //  
 
+  var newRealNumber = numero;
+  var newCounter = 0;
+
+  do {
+
+    newCounter = newCounter + 5;
+
+    newRealNumber = newRealNumber + 5;
+
+  } while (newCounter < 40 );
+
+  return newRealNumber;
 }
 
 
