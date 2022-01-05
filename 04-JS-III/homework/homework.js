@@ -7,6 +7,12 @@ function devolverPrimerElemento( array ) {
   // the code :
   //
 
+  var newArrayObject = array;
+  var newObjectReturn = '';
+
+  newObjectReturn = newArrayObject[ 0 ];
+
+  return newObjectReturn;
 }
 
 
@@ -16,6 +22,13 @@ function devolverUltimoElemento( array ) {
   //
   // the code :
   //
+  
+  var newArrayObject = array;
+  var newObjectReturn = '';
+
+  newObjectReturn = newArrayObject[ newArrayObject.length - 1 ];
+
+  return newObjectReturn;
 }
 
 
@@ -24,7 +37,14 @@ function obtenerLargoDelArray( array ) {
 
   //
   // the code :
-  //
+  // 
+
+  var newArrayObject = array;
+  var newObjectReturn = '';
+
+  newObjectReturn = ( newArrayObject.length );
+
+  return newObjectReturn;
 }
 
 
@@ -36,6 +56,14 @@ function incrementarPorUno( array ) {
   //
   // the code :
   //
+  var newArrayObject = array;
+  var newObjectReturn = '';
+
+  for ( let i = 0; i < newArrayObject.length; i++ ) {
+    newArrayObject[ i ] = ( newArrayObject[ i ] + 1 );
+  }
+
+  return newArrayObject;
 }
 
 
@@ -46,6 +74,13 @@ function agregarItemAlFinalDelArray( array, elemento ) {
   //
   // the code :
   //
+
+  var newArrayObject = array;
+  var newElementObject = elemento;
+  
+  newArrayObject.push( newElementObject );
+  
+  return newArrayObject;
 }
 
 
@@ -57,6 +92,13 @@ function agregarItemAlComienzoDelArray( array, elemento ) {
   //
   // the code :
   //
+
+  var newArrayObject = array;
+  var newElementObject = elemento;
+  
+  newArrayObject.unshift( newElementObject );
+  
+  return newArrayObject;
 }
 
 
@@ -69,6 +111,17 @@ function dePalabrasAFrase( palabras ) {
   //
   // the code :
   //
+
+  var newArrayObject = palabras;
+  var newStringObjectReturn = newArrayObject[ 0 ];
+  
+    for ( let i = 1; i < newArrayObject.length; i++ ){
+
+    newStringObjectReturn = ( newStringObjectReturn.concat( ' ', newArrayObject[ i ] ) );
+
+  }
+
+  return newStringObjectReturn;
 }
 
 
@@ -79,6 +132,21 @@ function arrayContiene( array, elemento ) {
   //
   // the code :
   //
+  
+  var newArrayObject = array;
+  var newElementObject = elemento;
+  
+  var newBooleanReturn = false;
+  
+  for ( let i = 0; i < newArrayObject.length; i++ ){
+
+    if ( newArrayObject[ i ] == newElementObject ){
+      newBooleanReturn = true;
+    }
+
+  }
+    
+  return newBooleanReturn;
 }
 
 
@@ -89,6 +157,17 @@ function agregarNumeros( numeros ) {
   //
   // the code :
   //
+
+  var newArrayObject = numeros;
+  var newObjectReturn = newArrayObject[ 0 ];
+
+  for ( let i = 1; i < newArrayObject.length; i++ ){
+    
+    newObjectReturn = newObjectReturn + newArrayObject[ i ];
+
+  }
+
+  return newObjectReturn;
 }
 
 
@@ -99,6 +178,19 @@ function promedioResultadosTest( resultadosTest ) {
   //
   // the code :
   //
+
+  var newArrayObject = resultadosTest;
+  var newObjectReturn = newArrayObject[ 0 ];
+
+  for ( let i = 1; i < newArrayObject.length; i++ ){
+    
+    newObjectReturn = ( newObjectReturn + newArrayObject[ i ] ) ;
+
+  }
+
+  newObjectReturn = newObjectReturn / newArrayObject.length;
+
+  return newObjectReturn;
 }
 
 
@@ -109,16 +201,35 @@ function numeroMasGrande( numeros ) {
   //
   // the code :
   //
+
+  var newArrayObject = numeros;
+  var newObjectReturn = 0;
+
+  newObjectReturn = Math.max.apply( null, newArrayObject );
+
+  return newObjectReturn;
 }
 
 
-function multiplicarArgumentos() {
+function multiplicarArgumentos( ) {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   
   //
   // the code :
   //
+  var newObjectReturn;
+
+  if( arguments.length < 1) return 0;
+  
+  var newObjectReturn = 1;
+
+  for( let i = 0; i < arguments.length; i++ ) {
+
+    newObjectReturn = newObjectReturn * arguments[ i ];
+  }
+
+  return newObjectReturn;
 }
 
 
@@ -129,6 +240,16 @@ function cuentoElementos( arreglo ){
   // the code :
   //
 
+  var newArrayObject = arreglo;
+  var newObjectReturn = 0;
+
+  for ( let i = 0; i < newArrayObject.length ; i++ ){
+
+    if ( newArrayObject[ i ] > 18 ){ newObjectReturn = ( newObjectReturn + 1 ); }
+
+  }
+
+  return newObjectReturn;
 }
 
 
@@ -140,6 +261,19 @@ function diaDeLaSemana( numeroDeDia ) {
   //
   // the code :
   //
+
+  var newArrayObject = numeroDeDia;
+  var newObjectReturn = '';
+
+  if ( newArrayObject == 1 ){ newObjectReturn = ( 'Es fin de semana' ); }
+  if ( newArrayObject == 2 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject == 3 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject == 4 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject == 5 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject == 6 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject == 7 ){ newObjectReturn = ( 'Es fin de semana' ); }
+
+    return newObjectReturn;
 } 
 
 
@@ -150,6 +284,15 @@ function empiezaConNueve( n ) {
   //
   // the code :
   //
+
+  var newArrayObject = n;
+  var newBooleanReturn = false;
+
+  newStringArrayObject = newArrayObject.toString();
+
+  if ( newStringArrayObject[ 0 ] == '9' ){ newBooleanReturn = true; }
+
+  return newBooleanReturn;
 }
 
 
@@ -160,8 +303,19 @@ function todosIguales( arreglo ) {
   //
   // the code :
   //
-} 
 
+  var newArrayObject = arreglo;
+  var newBooleanReturn = false;
+
+  for ( let i = 1; i < newArrayObject.length; i++ ){
+
+    if ( newArrayObject[ i - 1 ] === newArrayObject[ i ]){ newBooleanReturn = true }
+
+  }
+  
+  return newBooleanReturn;
+
+} 
 
 function mesesDelAño( array ) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
@@ -171,6 +325,22 @@ function mesesDelAño( array ) {
   //
   // the code :
   //
+  
+  var newArrayObject = array;
+  var newArrayReturn = [];
+  var intCounter = 0;
+  var newBooleanReturn = false;
+
+  for ( let i = 0; i < newArrayObject.length; i++ ){
+
+    if ( newArrayObject[ i ] === 'Enero' ){ newArrayReturn.push( 'Enero' ); intCounter++; }
+    if ( newArrayObject[ i ] === 'Marzo' ){ newArrayReturn.push( 'Marzo' ); intCounter++; }
+    if ( newArrayObject[ i ] === 'Noviembre' ){ newArrayReturn.push( 'Noviembre' ); intCounter++; }
+
+  }
+  if ( newArrayReturn.length < 3 ){ newArrayReturn = 'No se encontraron los meses pedidos' }
+
+  return newArrayReturn;
 }
 
 
@@ -181,6 +351,19 @@ function mayorACien( array ) {
   //
   // the code :
   //
+  
+  var newArrayObject = array;
+  var newArrayReturn = [];
+  var intCounter = 0;
+  var newBooleanReturn = false;
+
+  for ( let i = 0; i < newArrayObject.length; i++ ){
+
+    if ( newArrayObject[ i ] > 100 ){ newArrayReturn.push( newArrayObject[ i ] ); }
+
+  }
+
+  return newArrayReturn;  
 }
 
 
@@ -195,6 +378,26 @@ function breakStatement( numero ) {
   //
   // the code :
   //
+  
+  var newArrayObject = numero;
+  var newArrayReturn = [];
+  var intCounter = 0;
+  var newBooleanReturn = false;
+
+  for ( let i = 0; i < 10; i++ ){
+
+    newArrayObject = ( newArrayObject + 2 );
+
+    newArrayReturn[ i ] = newArrayObject;
+
+    if ( newArrayObject === i ){ 
+      newArrayReturn = 'Se interrumpió la ejecución';
+      break 
+     }
+
+  }
+
+  return newArrayReturn;  
 }
 
 
@@ -208,6 +411,27 @@ function continueStatement( numero ) {
   //
   // the code :
   //
+
+  var newArrayObject = numero;
+  var newArrayReturn = [];
+  var intCounter = 0;
+  var newBooleanReturn = false;
+
+  for ( let i = 0; i < 10; i++ ){
+
+    if ( i === 5 ){ 
+
+      continue; 
+    }
+    else{
+
+      newArrayObject = ( newArrayObject + 2 );
+      newArrayReturn.push( newArrayObject );
+
+    }
+  }
+
+  return newArrayReturn;  
 }
 
 
