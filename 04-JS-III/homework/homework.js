@@ -6,8 +6,8 @@ function devolverPrimerElemento( array ) {
   //
   // the code :
   //
-
   var newArrayObject = array;
+
   var newObjectReturn = '';
 
   newObjectReturn = newArrayObject[ 0 ];
@@ -22,8 +22,8 @@ function devolverUltimoElemento( array ) {
   //
   // the code :
   //
-  
   var newArrayObject = array;
+
   var newObjectReturn = '';
 
   newObjectReturn = newArrayObject[ newArrayObject.length - 1 ];
@@ -38,8 +38,8 @@ function obtenerLargoDelArray( array ) {
   //
   // the code :
   // 
-
   var newArrayObject = array;
+
   var newObjectReturn = '';
 
   newObjectReturn = ( newArrayObject.length );
@@ -57,6 +57,7 @@ function incrementarPorUno( array ) {
   // the code :
   //
   var newArrayObject = array;
+
   var newObjectReturn = '';
 
   for ( let i = 0; i < newArrayObject.length; i++ ) {
@@ -74,7 +75,6 @@ function agregarItemAlFinalDelArray( array, elemento ) {
   //
   // the code :
   //
-
   var newArrayObject = array;
   var newElementObject = elemento;
   
@@ -92,7 +92,6 @@ function agregarItemAlComienzoDelArray( array, elemento ) {
   //
   // the code :
   //
-
   var newArrayObject = array;
   var newElementObject = elemento;
   
@@ -111,8 +110,8 @@ function dePalabrasAFrase( palabras ) {
   //
   // the code :
   //
-
   var newArrayObject = palabras;
+
   var newStringObjectReturn = newArrayObject[ 0 ];
   
     for ( let i = 1; i < newArrayObject.length; i++ ){
@@ -132,7 +131,6 @@ function arrayContiene( array, elemento ) {
   //
   // the code :
   //
-  
   var newArrayObject = array;
   var newElementObject = elemento;
   
@@ -140,7 +138,7 @@ function arrayContiene( array, elemento ) {
   
   for ( let i = 0; i < newArrayObject.length; i++ ){
 
-    if ( newArrayObject[ i ] == newElementObject ){
+    if ( newArrayObject[ i ] === newElementObject ){
       newBooleanReturn = true;
     }
 
@@ -157,8 +155,8 @@ function agregarNumeros( numeros ) {
   //
   // the code :
   //
-
   var newArrayObject = numeros;
+
   var newObjectReturn = newArrayObject[ 0 ];
 
   for ( let i = 1; i < newArrayObject.length; i++ ){
@@ -178,8 +176,8 @@ function promedioResultadosTest( resultadosTest ) {
   //
   // the code :
   //
-
   var newArrayObject = resultadosTest;
+
   var newObjectReturn = newArrayObject[ 0 ];
 
   for ( let i = 1; i < newArrayObject.length; i++ ){
@@ -201,8 +199,8 @@ function numeroMasGrande( numeros ) {
   //
   // the code :
   //
-
   var newArrayObject = numeros;
+
   var newObjectReturn = 0;
 
   newObjectReturn = Math.max.apply( null, newArrayObject );
@@ -239,8 +237,8 @@ function cuentoElementos( arreglo ){
   //
   // the code :
   //
-
   var newArrayObject = arreglo;
+
   var newObjectReturn = 0;
 
   for ( let i = 0; i < newArrayObject.length ; i++ ){
@@ -261,17 +259,17 @@ function diaDeLaSemana( numeroDeDia ) {
   //
   // the code :
   //
-
   var newArrayObject = numeroDeDia;
+
   var newObjectReturn = '';
 
-  if ( newArrayObject == 1 ){ newObjectReturn = ( 'Es fin de semana' ); }
-  if ( newArrayObject == 2 ){ newObjectReturn = ( 'Es dia Laboral' ); }
-  if ( newArrayObject == 3 ){ newObjectReturn = ( 'Es dia Laboral' ); }
-  if ( newArrayObject == 4 ){ newObjectReturn = ( 'Es dia Laboral' ); }
-  if ( newArrayObject == 5 ){ newObjectReturn = ( 'Es dia Laboral' ); }
-  if ( newArrayObject == 6 ){ newObjectReturn = ( 'Es dia Laboral' ); }
-  if ( newArrayObject == 7 ){ newObjectReturn = ( 'Es fin de semana' ); }
+  if ( newArrayObject === 1 ){ newObjectReturn = ( 'Es fin de semana' ); }
+  if ( newArrayObject === 2 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject === 3 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject === 4 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject === 5 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject === 6 ){ newObjectReturn = ( 'Es dia Laboral' ); }
+  if ( newArrayObject === 7 ){ newObjectReturn = ( 'Es fin de semana' ); }
 
     return newObjectReturn;
 } 
@@ -284,13 +282,13 @@ function empiezaConNueve( n ) {
   //
   // the code :
   //
-
   var newArrayObject = n;
+
   var newBooleanReturn = false;
 
   newStringArrayObject = newArrayObject.toString();
 
-  if ( newStringArrayObject[ 0 ] == '9' ){ newBooleanReturn = true; }
+  if ( newStringArrayObject[ 0 ] === '9' ){ newBooleanReturn = true; }
 
   return newBooleanReturn;
 }
@@ -303,8 +301,8 @@ function todosIguales( arreglo ) {
   //
   // the code :
   //
-
   var newArrayObject = arreglo;
+
   var newBooleanReturn = false;
 
   for ( let i = 1; i < newArrayObject.length; i++ ){
@@ -314,7 +312,6 @@ function todosIguales( arreglo ) {
   }
   
   return newBooleanReturn;
-
 } 
 
 function mesesDelAño( array ) {
@@ -327,9 +324,9 @@ function mesesDelAño( array ) {
   //
   
   var newArrayObject = array;
+
   var newArrayReturn = [];
   var intCounter = 0;
-  var newBooleanReturn = false;
 
   for ( let i = 0; i < newArrayObject.length; i++ ){
 
@@ -351,11 +348,9 @@ function mayorACien( array ) {
   //
   // the code :
   //
-  
   var newArrayObject = array;
+
   var newArrayReturn = [];
-  var intCounter = 0;
-  var newBooleanReturn = false;
 
   for ( let i = 0; i < newArrayObject.length; i++ ){
 
@@ -378,11 +373,9 @@ function breakStatement( numero ) {
   //
   // the code :
   //
-  
   var newArrayObject = numero;
+
   var newArrayReturn = [];
-  var intCounter = 0;
-  var newBooleanReturn = false;
 
   for ( let i = 0; i < 10; i++ ){
 
@@ -394,7 +387,6 @@ function breakStatement( numero ) {
       newArrayReturn = 'Se interrumpió la ejecución';
       break 
      }
-
   }
 
   return newArrayReturn;  
@@ -411,11 +403,9 @@ function continueStatement( numero ) {
   //
   // the code :
   //
-
   var newArrayObject = numero;
+
   var newArrayReturn = [];
-  var intCounter = 0;
-  var newBooleanReturn = false;
 
   for ( let i = 0; i < 10; i++ ){
 
