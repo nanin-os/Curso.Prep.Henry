@@ -8,14 +8,14 @@ function obtenerMayor( x, y ) {
   //
   // the code :
   //
-
   var newIntNumber_1 = x;
   var newIntNumber_2 = y;
+
   var newIntMaxVal = 0;
 
-  newIntMaxVal = Math.max( newIntNumber_1, newIntNumber_2 );
+  newIntMaxValReturn = Math.max( newIntNumber_1, newIntNumber_2 );
 
-  return newIntMaxVal;
+  return newIntMaxValReturn;
 }
 
 function mayoriaDeEdad( edad ) {
@@ -28,6 +28,7 @@ function mayoriaDeEdad( edad ) {
   //
 
   var newRealEdad = edad;
+
   var newRealReturn = 'Not Allowed';
   
   if ( newRealEdad >= 18 ) { newRealReturn = 'Allowed'; }
@@ -46,8 +47,8 @@ function conection( status ) {
   //
   // the code :
   //
-
   var newStringStatusValue = status;
+
   var newStringStatusReturn = 'Offline';
 
   if ( newStringStatusValue == 1 ) { newStringStatusReturn = 'Online'; }
@@ -66,8 +67,8 @@ function saludo( idioma ) {
   //
   // the code :
   //
-
   var newStringLang = idioma;
+
   var newStringLangReturn = 'Hola!';
 
   if( newStringLang == 'aleman' ) { newStringLangReturn = 'Guten Tag!'; }
@@ -89,7 +90,6 @@ function colors( color ) {
   //
   // the code :
   //
-
   var newStringColor = color;
 
   switch( newStringColor ){
@@ -113,8 +113,8 @@ function esDiezOCinco( numero ) {
   //
   // the code :
   //
-
   var newRealNumber = numero;
+
   var newBooleanReturn = false;
 
   if ( ( newRealNumber == 10 ) || ( newRealNumber == 5 ) ) { newBooleanReturn = true; }
@@ -129,8 +129,8 @@ function estaEnRango( numero ) {
   //
   // the code :
   //
-
   var newRealNumber = numero;
+
   var newBooleanReturn = false;
 
   if ( ( newRealNumber < 50 ) && ( newRealNumber > 20 ) ) { newBooleanReturn = true; }
@@ -149,8 +149,8 @@ function esEntero( numero ) {
   //
   // the code :
   //
-
   var newRealNumber = numero;
+
   var newBooleanReturn = false;
 
   if ( ( newRealNumber - Math.floor( newRealNumber ) ) == 0 ) { newBooleanReturn = true; }
@@ -168,7 +168,6 @@ function fizzBuzz( numero ) {
   //
   // the code :
   //
-
   var newRealNumber = numero;
   var newStringReturn = numero;
 
@@ -190,7 +189,6 @@ function operadoresLogicos( num1, num2, num3 ) {
   //
   // the code :
   // 
-  
   var newRealNumber_1 = num1;
   var newRealNumber_2 = num2;
   var newRealNumber_3 = num3;
@@ -226,20 +224,19 @@ function esPrimo( numero ) {
   //
   // the code :
   //
+  var newRealNumber = numero;
+  var newBooleanReturn = true;
 
-    var newRealNumber = numero;
-    var newBooleanReturn = true;
+  if ( newRealNumber <= 1) {
 
-    if ( newRealNumber <= 1) {
+    newBooleanReturn = false;
+    return newBooleanReturn;
 
-      newBooleanReturn = false;
-      return newBooleanReturn;
+  } else {
 
-    } else {
+    for ( let i = 2; i < newRealNumber; i++ ) {
 
-      for ( let i = 2; i < newRealNumber; i++ ) {
-
-        if ( newRealNumber % i == 0 ) {
+      if ( newRealNumber % i == 0 ) {
           newBooleanReturn = false;
           return newBooleanReturn;
         }
@@ -256,8 +253,8 @@ function esVerdadero( valor ){
   //
   // the code :
   //
-
   var newBooleanValue = valor;
+
   var newStringReturn = 'Soy falso';
 
   if ( newBooleanValue ) { newStringReturn = 'Soy verdadero'; }
@@ -273,8 +270,8 @@ function tablaDelSeis( ){
   //
   // the code :
   //
-  
   var newIntegerNumber = 6;
+  
   let newTableArray = []
   
   for (let i = 0; i <= 10; i++ ){
@@ -291,6 +288,7 @@ function tieneTresDigitos( numero ){
   // the code :
   //
   var newRealNumber = numero;
+
   var newBooleanReturn = false;
 
   if ( newRealNumber.toString().length == 3 ){ newBooleanReturn = true; }
@@ -306,7 +304,6 @@ function doWhile( numero ) {
   //
   // the code :
   //  
-
   var newRealNumber = numero;
   var newCounter = 0;
 

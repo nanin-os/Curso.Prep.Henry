@@ -296,3 +296,9 @@ Te invitamos a buscar en Google información de estos conceptos para poder desar
 * [MDN: Control Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 * [MDN: Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 * [MDN: for Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+
+> 
+> Greetings Henry Team! 
+> Thank you very much to all! 
+> 
