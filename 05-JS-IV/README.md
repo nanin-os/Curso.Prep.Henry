@@ -288,3 +288,8 @@ En esta lección aprendimos qué son los Objetos y las muchas formas que existen
 * [MDN: Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 * [MDN: this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 * [MDN: for...in Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+
+> 
+> Greetings Henry Team! 
+> Thank you very much to all! 
+> 
