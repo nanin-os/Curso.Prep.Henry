@@ -44,8 +44,12 @@ function suma( x, y ) {
   //
   // the code :
   //
+  var newNumber_1 = x;
+  var newNumber_2 = y;
 
-  return ( x + y );
+  var newNumberReturn = ( newNumber_1 + newNumber_2 );
+
+  return ( newNumberReturn );
 }
 
 function resta( x, y ) {
@@ -54,8 +58,12 @@ function resta( x, y ) {
   //
   // the code :
   //
+  var newNumber_1 = x;
+  var newNumber_2 = y;
 
-  return ( x - y );
+  var newNumberReturn = ( newNumber_1 - newNumber_2 );
+
+  return ( newNumberReturn );
 }
 
 function multiplica( x, y ) {
@@ -64,8 +72,12 @@ function multiplica( x, y ) {
   //
   // the code :
   //
+  var newNumber_1 = x;
+  var newNumber_2 = y;
 
-  return ( x * y );
+  var newNumberReturn = ( newNumber_1 * newNumber_2 );
+
+  return ( newNumberReturn );
 }
 
 function divide( x, y ) {
@@ -74,8 +86,12 @@ function divide( x, y ) {
   //
   // the code :
   //
+  var newNumber_1 = x;
+  var newNumber_2 = y;
 
-  return ( x / y );
+  var newNumberReturn = ( newNumber_1 / newNumber_2 );
+
+  return ( newNumberReturn );
 }
 
 function sonIguales( x, y ) {
@@ -85,10 +101,12 @@ function sonIguales( x, y ) {
   //
   // the code :
   //
+  var newNumber_1 = x;
+  var newNumber_2 = y;
 
   var newBooleanVar = false;
   
-  if ( x == y ) {
+  if ( newNumber_1 === newNumber_2 ) {
     newBooleanVar = true;
   }
 
@@ -102,10 +120,12 @@ function tienenMismaLongitud( str1, str2 ) {
   //
   // the code :
   //
+  var newString_1 = str1;
+  var newString_2 = str2;
 
   var newBooleanVar = false;
-
-  if ( str1.length == str2.length ) {
+  
+  if ( newString_1.length === newString_2.length ) {
     newBooleanVar = true; 
   }
 
@@ -119,9 +139,11 @@ function menosQueNoventa( num ) {
   //
   // the code :
   //
+  var newNumber = num;
+
   var newBooleanVar = false;
 
-  if ( num < 90 ) {
+  if ( newNumber < 90 ) {
     newBooleanVar = true;
   }
 
@@ -135,10 +157,11 @@ function mayorQueCincuenta( num ) {
   //
   // the code :
   //
+  var newNumber = num;
 
   var newBooleanVar = false;
 
-  if ( num > 50 ) {
+  if ( newNumber > 50 ) {
     newBooleanVar = true;
   }
   
@@ -151,12 +174,14 @@ function obtenerResto( x, y ) {
   //
   // the code :
   //
+  var newNumber_1 = x;
+  var newNumber_2 = y;
 
-  var newRealNumber = 0.00;
+  var newNumberRealReturn = 0.00;
+  
+  newNumberRealReturn = ( newNumber_1 % newNumber_2 );
 
-  newRealNumber = ( x % y );
-
-  return newRealNumber;
+  return newNumberRealReturn;
 }
 
 function esPar( num ) {
@@ -166,10 +191,11 @@ function esPar( num ) {
   //
   // the code :
   //
+  var newNumber = num;
 
   var newBooleanVar = false;
 
-  if ( num % 2 == 0 ) {
+  if ( newNumber % 2 === 0 ) {
     newBooleanVar = true;
   }
 
@@ -183,10 +209,11 @@ function esImpar( num ) {
   //
   // the code :
   //
+  var newNumber = num;
 
   var newBooleanVar = true;
 
-  if ( ( num % 2 ) == 0 ) {
+  if ( ( newNumber % 2 ) === 0 ) {
     newBooleanVar = false;
   }
 
@@ -200,12 +227,13 @@ function elevarAlCuadrado( num ) {
   //
   // the code :
   //
+  var newNumber = num;
 
-  var newRealNumber = 0.00;
+  var newRealNumberReturn = 0.00;
 
-  newRealNumber = Math.pow( num, 2 );
+  newRealNumberReturn = Math.pow( newNumber, 2 );
 
-  return newRealNumber;
+  return newRealNumberReturn;
 }
 
 function elevarAlCubo( num ) {
@@ -214,10 +242,11 @@ function elevarAlCubo( num ) {
   //
   // the code :
   //
+  var newNumber = num;
 
   var newRealNumber = 0.00;
 
-  newRealNumber = Math.pow( num, 3 );
+  newRealNumber = Math.pow( newNumber, 3 );
 
   return newRealNumber;
 }
@@ -228,10 +257,12 @@ function elevar( num, exponent ) {
   //
   // the code :
   //
+  var newNumber = num;
+  var newExponente = exponent;
 
   var newRealNumber = 0.00;
 
-  newRealNumber = Math.pow( num, exponent );
+  newRealNumber = Math.pow( newNumber, newExponente );
 
   return newRealNumber;
 }
@@ -242,12 +273,13 @@ function redondearNumero( num ) {
   //
   // the code :
   //
+  var newNumber = num;
 
-  var newIntegerNumber = 0;
+  var newNumberReturn = 0;
 
-  newIntegerNumber = Math.round( num );
+  newNumberReturn = Math.round( newNumber );
 
-  return newIntegerNumber;
+  return newNumberReturn;
 }
 
 function redondearHaciaArriba( num ) {
@@ -256,12 +288,13 @@ function redondearHaciaArriba( num ) {
   //
   // the code :
   //
+  var newNumber = num;
 
-  var newIntegerNumber = 0;
+  var newNumberReturn = 0;
 
-  newIntegerNumber = Math.ceil( num );
+  newNumberReturn = Math.ceil( newNumber );
 
-  return newIntegerNumber;
+  return newNumberReturn;
 }
 
 function numeroRandom() {
@@ -271,12 +304,11 @@ function numeroRandom() {
   //
   // the code :
   //
+  var newRealNumberReturn = 0.00;
 
-  var newRealNumber = 0.00;
+  newRealNumberReturn = Math.floor(Math.random( ) * 1 );
 
-  newRealNumber = Math.floor(Math.random( ) * 1 );
-
-  return newRealNumber;
+  return newRealNumberReturn;
 }
 
 function esPositivo( numero ) {
@@ -289,16 +321,17 @@ function esPositivo( numero ) {
   //
   // the code :
   //
+  var newNumber = numero;
 
-  var newStringChar = false;
+  var newStringCharReturn = false;
 
-  if ( numero > 0 ) {
-    newStringChar = 'Es positivo';
-  } else if ( numero < 0 ) {
-    newStringChar = 'Es negativo';
+  if ( newNumber > 0 ) {
+    newStringCharReturn = 'Es positivo';
+  } else if ( newNumber < 0 ) {
+    newStringCharReturn = 'Es negativo';
   }
 
-  return newStringChar;
+  return newStringCharReturn;
 }
 
 function agregarSimboloExclamacion( str ) {
@@ -308,7 +341,6 @@ function agregarSimboloExclamacion( str ) {
   // 
   // the code :
   //
-
    var newStringChar = str;
 
    newStringChar = ( newStringChar + '!' );
@@ -323,13 +355,12 @@ function combinarNombres( nombre, apellido ) {
   // 
   // the code :
   //
-  
-  var newStringChar = nombre;
+  var newStringCharNombre = nombre;
+  var newStringCharApellido = apellido;
 
-  newStringChar = ( newStringChar + ' ' + apellido );
+  newStringCharReturn = ( newStringCharNombre + ' ' + newStringCharApellido );
 
-  return newStringChar;
-
+  return newStringCharReturn;
 }
 
 function obtenerSaludo( nombre ) {
@@ -339,12 +370,11 @@ function obtenerSaludo( nombre ) {
   // 
   // the code :
   //
+  var newStringCharNombre = nombre;
 
-  var newStringChar = nombre;
+  newStringCharReturn = ( 'Hola ' + newStringCharNombre + '!' );
 
-  newStringChar = ( 'Hola ' + newStringChar + '!' );
-
-  return newStringChar;
+  return newStringCharReturn;
 }
 
 function obtenerAreaRectangulo( alto, ancho ) {
@@ -353,14 +383,14 @@ function obtenerAreaRectangulo( alto, ancho ) {
   // 
   // the code :
   //
-  
   var newRealHeight = alto;
   var newRealWidth = ancho;
-  var newRealBase = 0.00;
 
-  newRealBase = ( newRealHeight * newRealWidth );
+  var newRealBaseReturn = 0.00;
 
-  return newRealBase;
+  newRealBaseReturn = ( newRealHeight * newRealWidth );
+
+  return newRealBaseReturn;
 }
 
 
@@ -370,14 +400,13 @@ function retornarPerimetro( lado ){
   // 
   // the code :
   //
-
   var newRealHeight = lado;
   
-  var newRealPerimeter = 0.00;
+  var newRealPerimeterReturn = 0.00;
 
-  newRealPerimeter = ( newRealHeight * 4 );
+  newRealPerimeterReturn = ( newRealHeight * 4 );
 
-  return newRealPerimeter;
+  return newRealPerimeterReturn;
 }
 
 
@@ -387,14 +416,14 @@ function areaDelTriangulo( base, altura ){
   // 
   // the code :
   //
-
   var newRealHeight = base;
   var newRealWidth = altura;
-  var newRealArea = 0.00;
 
-  newRealArea = ( ( newRealHeight * newRealWidth ) / 2 );
+  var newRealAreaReturn = 0.00;
 
-  return newRealArea;
+  newRealAreaReturn = ( ( newRealHeight * newRealWidth ) / 2 );
+
+  return newRealAreaReturn;
 }
 
 
@@ -405,14 +434,14 @@ function deEuroAdolar( euro ){
   // 
   // the code :
   //
-
   var newRealEUMoney = euro;
+
   var newRealConversionRatio = 1.20;
-  var newRealUSMoney = 0.00;
+  var newRealUSMoneyReturn = 0.00;
 
-  newRealUSMoney = ( newRealEUMoney * newRealConversionRatio );
+  newRealUSMoneyReturn = ( newRealEUMoney * newRealConversionRatio );
 
-  return newRealUSMoney;
+  return newRealUSMoneyReturn;
 }
 
 
@@ -425,11 +454,11 @@ function esVocal( letra ){
   // 
   // the code :
   //
-
   var newStringChar = letra;
+
   var newStringReturn = 'Dato incorrecto'
 
-  if ( newStringChar.length == 1 ) {
+  if ( newStringChar.length === 1 ) {
 
     if ( newStringChar.includes( 'a' )) { newStringReturn = 'Es vocal'; }
     if ( newStringChar.includes( 'e' )) { newStringReturn = 'Es vocal'; }
