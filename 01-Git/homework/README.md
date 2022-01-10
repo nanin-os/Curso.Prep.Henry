@@ -171,6 +171,6 @@ La terminal te preguntará tu usuario y contraseña (En el caso de la contraseñ
 ¡Felicitaciones, acabas de subir tu primer git commit!
 
 > 
-> Greetings Henry Team! 
-> Thank you very much to all! 
+> Greetings Henry Team!  
+> Thank you very much to all!  
 > 
