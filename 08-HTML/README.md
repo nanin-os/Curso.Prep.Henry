@@ -422,3 +422,10 @@ Ahora que tenemos nuestra hoja de estilo externa vinculada a nuestro archivo HTM
 * [Codecademy: Learn HTML](https://www.codecademy.com/learn/learn-html)
 * [Codecademy: Learn CSS](https://www.codecademy.com/learn/learn-css)
 * [w3schools: The Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
+
+
+
+> 
+> Greetings Henry Team! 
+> Thank you very much to all! 
+> 
